@@ -7,7 +7,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "create-schema": "tsx src/scripts/create-schema.ts"
+    "create-schema": "tsx src/create-schema.ts"
   },
   "dependencies": {
     "@azure/identity": "^4.5.0",

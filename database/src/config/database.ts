@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 import { getEnvironmentVariable } from '../util/environment-variable';
 import { getAzureAccessToken } from '../util/access-token';
 
-dotenv.config(); // Load environment variables
+dotenv.config();
 
 export const connectToDB = async (callback: (connection: Connection) => void) => {
   const accessToken = await getAzureAccessToken();
