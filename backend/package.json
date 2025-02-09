@@ -7,15 +7,13 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "build": "npx prisma generate --schema=../database/prisma/schema/schema.prisma && tsc && cp -R src/graphql/schema dist/graphql",
+    "build": "npx prisma generate --schema=../database/prisma/schema.prisma && tsc && cp -R src/graphql/schema dist/graphql",
     "start": "npm run build && node dist/server.js"
   },
   "dependencies": {
     "@apollo/server": "^4.11.3",
     "@graphql-tools/load-files": "^7.0.1",
     "@prisma/client": "^6.3.1",
-    "apollo-server": "^3.13.0",
-    "apollo-server-express": "^3.13.0",
     "body-parser": "^1.20.3",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
@@ -23,12 +21,12 @@
     "graphql": "^16.10.0",
     "graphql-http": "^1.22.4",
     "ts-node": "^10.9.2",
-    "tsx": "^4.19.2",
-    "typescript": "^5.2.2"
+    "tsx": "^4.19.2"
   },
   "devDependencies": {
     "@types/express": "^5.0.0",
     "@types/graphql": "^14.2.3",
-    "prisma": "^6.3.1"
+    "prisma": "^6.3.1",
+    "typescript": "^5.7.3"
   }
 }

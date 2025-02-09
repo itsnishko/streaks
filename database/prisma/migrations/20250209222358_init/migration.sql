@@ -2,6 +2,7 @@
 CREATE TABLE "Activity" (
     "id" TEXT NOT NULL,
     "name" TEXT NOT NULL,
+    "isActive" BOOLEAN NOT NULL,
     "description" TEXT,
     "createdOn" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "createdBy" TEXT NOT NULL,

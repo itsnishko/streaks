@@ -1,7 +1,10 @@
-const { activities } = require('../../models/activity.model');
-module.exports = {
+import { activityMutations } from "../mutations/activity.mutation.js";
+import { activityQueries } from "../queries/activity.query.js";
+export const activityResolver = {
     Query: {
-        getActivities: () => activities,
-    }
+        ...activityQueries,
+    },
+    Mutation: {
+        ...activityMutations,
+    },
 };
-export {};

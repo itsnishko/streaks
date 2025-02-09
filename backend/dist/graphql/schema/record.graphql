@@ -1,10 +1,14 @@
 type Record {
-  id: ID!
-  activityId: ID!
-  createdOn: String!
-  createdBy: String!
-  updatedOn: String!
-  updatedBy: String!
+    id: string;
+    name: string;
+    description?: string;
+    createdOn: Date;
+    createdBy: string;
+    updatedOn: Date;
+    updatedBy: string;
+    activityId: string;
+    activity: Activity;
+    values: Value[];
 }
 
 type Query {
@@ -12,6 +16,6 @@ type Query {
 }
 
 type Mutation {
-  createRecord(activityId: ID!, createdBy: String!): Record
+  createRecord(name: strinactivityId: ID!, createdBy: String!): Record
   updateRecord(id: ID!, activityId: ID!, updatedBy: String!): Record
 }
