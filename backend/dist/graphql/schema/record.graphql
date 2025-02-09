@@ -1,0 +1,17 @@
+type Record {
+  id: ID!
+  activityId: ID!
+  createdOn: String!
+  createdBy: String!
+  updatedOn: String!
+  updatedBy: String!
+}
+
+type Query {
+  getRecords(activityId: ID!): [Record]
+}
+
+type Mutation {
+  createRecord(activityId: ID!, createdBy: String!): Record
+  updateRecord(id: ID!, activityId: ID!, updatedBy: String!): Record
+}

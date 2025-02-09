@@ -1,0 +1,21 @@
+type Activity {
+  id: ID
+  name: String
+  description: String
+  isActive: Boolean
+  createdOn: String
+  createdBy: String
+  updatedOn: String
+  updatedBy: String
+}
+
+type Query {
+  getActivities: [Activity]
+  getActivitiesById(id: ID): Activity
+}
+
+type Mutation {
+  createActivity(name: String!, description: String, createdBy: String): Activity
+  updateActivity(id: ID, name: String, description: String, updatedBy: String): Activity
+  deleteActivity(id: ID): Boolean
+}
