@@ -2,20 +2,29 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Run Client",
+      "label": "Run Frontend",
       "type": "shell",
       "command": "npm start",
       "options": {
-        "cwd": "${workspaceFolder}/client"
+        "cwd": "${workspaceFolder}/frontend"
       },
       "problemMatcher": []
     },
     {
-      "label": "Run Server",
+      "label": "Run Backend",
       "type": "shell",
       "command": "npm start",
       "options": {
-        "cwd": "${workspaceFolder}/server"
+        "cwd": "${workspaceFolder}/backend"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Craete Schema",
+      "type": "shell",
+      "command": "npm run schema",
+      "options": {
+        "cwd": "${workspaceFolder}/database"
       },
       "problemMatcher": []
     }
