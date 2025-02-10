@@ -14,16 +14,6 @@ type Query {
 }
 
 type Mutation {
-  createActivity(
-    name: String!
-    description: String
-    isActive: Boolean!
-  ): Activity!
-
-  updateActivity(
-    id: ID!
-    name: String
-    description: String
-    isActive: Boolean
-  ): Activity!
+  createActivity(name: String!, description: String, isActive: Boolean!): Activity!
+  updateActivity(id: ID!, name: String, description: String, isActive: Boolean): Activity!
 }

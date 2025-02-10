@@ -4,7 +4,7 @@ export interface Activity {
     id: string;
     name: string;
     isActive: boolean;
-    description?: string;
+    description: string;
     createdOn: Date;
     createdBy: string;
     updatedOn: Date;

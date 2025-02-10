@@ -3,7 +3,7 @@ import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
 
 export const activityMutations = {
-    createActivity: async (_: any, { name, description, isActive }: { name: string; description: string; isActive: boolean }) => {
+    createActivity: async (_: any, { name, description, isActive }: { name: string, description: string, isActive: boolean }) => {
         try {
             const newActivity = await prisma.activity.create({
                 data: {

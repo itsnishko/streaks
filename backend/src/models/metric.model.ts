@@ -4,7 +4,7 @@ import { Value } from './value.model.js';
 export interface Metric {
     id: string;
     name: string;
-    description?: string;
+    description: string;
     dataType: string;
     isRequired: boolean;
     isActive: boolean;

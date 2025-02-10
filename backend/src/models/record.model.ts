@@ -4,7 +4,7 @@ import { Value } from './value.model.js';
 export interface Record {
     id: string;
     name: string;
-    description?: string;
+    description: string;
     createdOn: Date;
     createdBy: string;
     updatedOn: Date;
