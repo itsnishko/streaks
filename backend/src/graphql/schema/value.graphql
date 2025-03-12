@@ -1,8 +1,0 @@
-type Value {
-  id: ID
-  recordId: ID
-  fieldId: ID
-  data: String
-  createdOn: String
-  createdBy: String
-}
